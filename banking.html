@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="text-5xl text-center my-10 font-semibold">
+        Your  <span class="text-purple-600">Ethereum</span>
+        Currency Here!
+    </header>
+
+    <main>
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-blue-600 p-8 text-white rounded-xl">
+                    <h3 class="text-2xl">Deposite</h3>
+                    <h2  class="text-4xl font-semibold">eth <span id="deposit-total">000</span></h2>
+                </div>
+                <div class="bg-red-600 p-8 text-white rounded-xl">
+                    <h3 class="text-2xl">Widthdraw</h3>
+                    <h2 class="text-4xl font-semibold">eth <span id="widthdraw-total">000</span></h2>
+                </div>
+                <div class="bg-green-600 p-8 text-white rounded-xl">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h2 class="text-4xl font-semibold">eth <span id="balance-input">000</span></h2>
+                </div>
+
+            </div>
+
+            <!-- Deposite & Widthdraw Section -->
+
+
+
+
+            <div class="grid grid-cols-2 gap-2 mt-8 ">
+                <div class="space-y-5 bg-purple-700 p-8 rounded-xl">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <input id="deposit-input" class="-3/4 block px-3 my-3 h-9 rounded border-slate-400 border-2"
+                        type="text" placeholder="$ Deposit Ammount " required>
+
+
+                    <button id="deposit-button"
+                        class="bg-green-700 text-white rounded px-3 py-2 font-semibold">Deposite</button>
+                </div>
+                <div class="space-y-5 bg-yellow-300 p-8 rounded-xl">
+                    <h3 class="text-2xl">Widthraw Here</h3>
+                    <input id="widthdraw-input" class="-3/4 block px-3 my-3 h-9 rounded border-slate-400 border-2"
+                        type="text" placeholder="$ Widthdraw Ammount " required>
+
+
+                    <button id="widthdraw-button"
+                        class="bg-red-500 text-white rounded px-3 py-2 font-semibold">Widthdraw</button>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <script src="./js/banking.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+
+.span{
+    color: red;
+}
+.head{
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+}
+
+.login{
+
+}
+.button{
+    
+padding: 5pxpx 15px;
+    
+padding: 5px 10px;
+    
+margin-top: 10px;
+}
+.main{
+    /* border: 10px; */
+    border: 2px solid;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form{
+}
+.form1{}
+.form2{}
+.input1{}
+.input2{}
